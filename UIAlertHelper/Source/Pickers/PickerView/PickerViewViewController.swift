@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIAlertController {
+public extension UIAlertController {
     
     /// Add a picker view
     ///
@@ -61,7 +61,7 @@ final class PickerViewViewController: UIViewController {
     }
 }
 
-extension PickerViewViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+public extension PickerViewViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     // returns the number of 'columns' to display.
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {

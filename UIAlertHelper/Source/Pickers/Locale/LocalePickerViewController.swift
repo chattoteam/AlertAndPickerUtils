@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIAlertController {
+public extension UIAlertController {
 
     /// Add Locale Picker
     ///
@@ -235,7 +235,7 @@ final class LocalePickerViewController: UIViewController {
 
 // MARK: - UISearchResultsUpdating
 
-extension LocalePickerViewController: UISearchResultsUpdating {
+public extension LocalePickerViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text, searchController.isActive {
@@ -259,7 +259,7 @@ extension LocalePickerViewController: UISearchResultsUpdating {
 
 // MARK: - UISearchBarDelegate
 
-extension LocalePickerViewController: UISearchBarDelegate {
+public extension LocalePickerViewController: UISearchBarDelegate {
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
 
@@ -268,7 +268,7 @@ extension LocalePickerViewController: UISearchBarDelegate {
 
 // MARK: - TableViewDelegate
 
-extension LocalePickerViewController: UITableViewDelegate {
+public extension LocalePickerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let info = info(at: indexPath) else { return }
@@ -279,7 +279,7 @@ extension LocalePickerViewController: UITableViewDelegate {
 
 // MARK: - TableViewDataSource
 
-extension LocalePickerViewController: UITableViewDataSource {
+public extension LocalePickerViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         if searchController.isActive { return 1 }

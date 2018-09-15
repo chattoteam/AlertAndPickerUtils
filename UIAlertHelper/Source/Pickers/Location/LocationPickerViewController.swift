@@ -4,7 +4,7 @@ import CoreLocation
 
 /// Based on https://github.com/almassapargali/LocationPicker
 
-extension UIAlertController {
+public extension UIAlertController {
     
     /// Add PhotoLibrary Picker
     ///
@@ -274,7 +274,7 @@ final class LocationPickerViewController: UIViewController {
     }
 }
 
-extension LocationPickerViewController: CLLocationManagerDelegate {
+public extension LocationPickerViewController: CLLocationManagerDelegate {
     
 	public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 		guard let location = locations.first else { return }
@@ -286,7 +286,7 @@ extension LocationPickerViewController: CLLocationManagerDelegate {
 
 // MARK: Searching
 
-extension LocationPickerViewController: UISearchResultsUpdating {
+public extension LocationPickerViewController: UISearchResultsUpdating {
 	public func updateSearchResults(for searchController: UISearchController) {
 		guard let term = searchController.searchBar.text else { return }
 		
@@ -349,7 +349,7 @@ extension LocationPickerViewController: UISearchResultsUpdating {
 
 // MARK: Selecting location with gesture
 
-extension LocationPickerViewController {
+public extension LocationPickerViewController {
     @objc func addLocation(_ gestureRecognizer: UIGestureRecognizer) {
 		if gestureRecognizer.state == .began {
 			let point = gestureRecognizer.location(in: mapView)
@@ -365,7 +365,7 @@ extension LocationPickerViewController {
 
 // MARK: MKMapViewDelegate
 
-extension LocationPickerViewController: MKMapViewDelegate {
+public extension LocationPickerViewController: MKMapViewDelegate {
 	public func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
 		if annotation is MKUserLocation { return nil }
 		
@@ -416,7 +416,7 @@ extension LocationPickerViewController: MKMapViewDelegate {
 	}
 }
 
-extension LocationPickerViewController: UIGestureRecognizerDelegate {
+public extension LocationPickerViewController: UIGestureRecognizerDelegate {
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
@@ -424,7 +424,7 @@ extension LocationPickerViewController: UIGestureRecognizerDelegate {
 
 // MARK: UISearchBarDelegate
 
-extension LocationPickerViewController: UISearchBarDelegate {
+public extension LocationPickerViewController: UISearchBarDelegate {
 	public func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
 		// dirty hack to show history when there is no text in search bar
 		// to be replaced later (hopefully)

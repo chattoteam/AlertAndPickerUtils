@@ -11,7 +11,7 @@ public enum TelegramSelectionType {
     case contact(Contact?)
 }
 
-extension UIAlertController {
+public extension UIAlertController {
     
     /// Add Telegram Picker
     ///
@@ -298,7 +298,7 @@ final class TelegramPickerViewController: UIViewController {
 
 // MARK: - TableViewDelegate
 
-extension TelegramPickerViewController: UICollectionViewDelegate {
+public extension TelegramPickerViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         layout.selectedCellIndexPath = layout.selectedCellIndexPath == indexPath ? nil : indexPath
@@ -312,7 +312,7 @@ extension TelegramPickerViewController: UICollectionViewDelegate {
 
 // MARK: - CollectionViewDataSource
 
-extension TelegramPickerViewController: UICollectionViewDataSource {
+public extension TelegramPickerViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -340,7 +340,7 @@ extension TelegramPickerViewController: UICollectionViewDataSource {
 
 // MARK: - PhotoLayoutDelegate
 
-extension TelegramPickerViewController: PhotoLayoutDelegate {
+public extension TelegramPickerViewController: PhotoLayoutDelegate {
     
     func collectionView(_ collectionView: UICollectionView, sizeForPhotoAtIndexPath indexPath: IndexPath) -> CGSize {
         let size: CGSize = sizeForItem(asset: assets[indexPath.item])
@@ -351,7 +351,7 @@ extension TelegramPickerViewController: PhotoLayoutDelegate {
 
 // MARK: - TableViewDelegate
 
-extension TelegramPickerViewController: UITableViewDelegate {
+public extension TelegramPickerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Log("indexPath = \(indexPath)")
@@ -363,7 +363,7 @@ extension TelegramPickerViewController: UITableViewDelegate {
 
 // MARK: - TableViewDataSource
 
-extension TelegramPickerViewController: UITableViewDataSource {
+public extension TelegramPickerViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

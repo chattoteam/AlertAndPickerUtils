@@ -548,7 +548,7 @@ public extension Date {
 }
 
 public extension Date {
-    /// SwiftRandom extension
+    /// SwiftRandom public extension
     public static func randomWithinDaysBeforeToday(_ days: Int) -> Date {
         let today = Date()
         let gregorian = Calendar(identifier: Calendar.Identifier.gregorian)
@@ -571,7 +571,7 @@ public extension Date {
         return rndDate1
     }
     
-    /// SwiftRandom extension
+    /// SwiftRandom public extension
     public static func random() -> Date {
         let randomTime = TimeInterval(arc4random_uniform(UInt32.max))
         return Date(timeIntervalSince1970: randomTime)

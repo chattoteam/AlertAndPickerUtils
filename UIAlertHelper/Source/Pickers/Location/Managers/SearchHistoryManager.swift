@@ -37,7 +37,7 @@ struct CoordinateDicKeys {
 	static let longitude = "Longitude"
 }
 
-extension CLLocationCoordinate2D {
+public extension CLLocationCoordinate2D {
     
 	func toDefaultsDic() -> NSDictionary {
 		return [CoordinateDicKeys.latitude: latitude, CoordinateDicKeys.longitude: longitude]
@@ -50,7 +50,7 @@ extension CLLocationCoordinate2D {
 	}
 }
 
-extension Location {
+public extension Location {
     
 	func toDefaultsDic() -> NSDictionary? {
 		guard let postalAddress = placemark.postalAddress,

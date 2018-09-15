@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import Photos
 
-extension UIAlertController {
+public extension UIAlertController {
     
     /// Add PhotoLibrary Picker
     ///
@@ -211,7 +211,7 @@ final class PhotoLibraryPickerViewController: UIViewController {
 
 // MARK: - CollectionViewDelegate
 
-extension PhotoLibraryPickerViewController: UICollectionViewDelegate {
+public extension PhotoLibraryPickerViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let asset = assets[indexPath.item]
@@ -243,7 +243,7 @@ extension PhotoLibraryPickerViewController: UICollectionViewDelegate {
 
 // MARK: - CollectionViewDataSource
 
-extension PhotoLibraryPickerViewController: UICollectionViewDataSource {
+public extension PhotoLibraryPickerViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -265,7 +265,7 @@ extension PhotoLibraryPickerViewController: UICollectionViewDataSource {
 
 // MARK: - CollectionViewDelegateFlowLayout
 
-extension PhotoLibraryPickerViewController: UICollectionViewDelegateFlowLayout {
+public extension PhotoLibraryPickerViewController: UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return itemSize

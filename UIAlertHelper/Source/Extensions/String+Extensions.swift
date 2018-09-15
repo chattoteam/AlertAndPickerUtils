@@ -1,6 +1,6 @@
 import UIKit
 
-extension String {
+public extension String {
     
     subscript (i: Int) -> Character {
         return self[index(startIndex, offsetBy: i)]
@@ -26,7 +26,7 @@ extension String {
     }
 }
 
-// MARK: - NSAttributedString extensions
+// MARK: - NSAttributedString public extensions
 public extension String {
     
     /// Regular string.
@@ -63,7 +63,7 @@ public extension String {
     }
 }
 
-extension Array where Element: NSAttributedString {
+public extension Array where Element: NSAttributedString {
     func joined(separator: NSAttributedString) -> NSAttributedString {
         var isFirst = true
         return self.reduce(NSMutableAttributedString()) {

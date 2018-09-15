@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIImageView {
+public extension UIImageView {
     
     /// Sets the image property of the view based on initial text, a specified background color, custom text attributes, and a circular clipping
     ///
@@ -9,7 +9,7 @@ extension UIImageView {
     ///   - color: This optional paramter sets the background of the image. By default, a random color will be generated.
     ///   - circular: This boolean will determine if the image view will be clipped to a circular shape.
     ///   - textAttributes: This dictionary allows you to specify font, text color, shadow properties, etc.
-    open func setImage(string: String?, color: UIColor? = nil, circular: Bool = false, textAttributes: [NSAttributedStringKey: Any]? = nil) {
+    public func setImage(string: String?, color: UIColor? = nil, circular: Bool = false, textAttributes: [NSAttributedStringKey: Any]? = nil) {
         
         let image = imageSnap(text: string != nil ? string?.initials : "", color: color ?? UIColor.random, circular: circular, textAttributes: textAttributes)
         
@@ -58,7 +58,7 @@ extension UIImageView {
 }
 
 // MARK: String Helper
-extension String {
+public extension String {
     
     public var initials: String {
         var finalString = String()
@@ -89,7 +89,7 @@ typealias HSVOffset = (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, a
 let kGradientTopOffset: HSVOffset = (hue: -0.025, saturation: 0.05, brightness: 0, alpha: 0)
 let kGradientBotomOffset: HSVOffset = (hue: 0.025, saturation: -0.05, brightness: 0, alpha: 0)
 
-extension UIImageView {
+public extension UIImageView {
     
     public func setImageForName(string: String, backgroundColor: UIColor? = nil, circular: Bool, textAttributes: [NSAttributedStringKey: AnyObject]?, gradient: Bool = false) {
         

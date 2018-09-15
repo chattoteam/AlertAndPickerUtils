@@ -1,7 +1,7 @@
 import UIKit
 import ContactsUI
 
-extension UIAlertController {
+public extension UIAlertController {
     
     /// Add Contacts Picker
     ///
@@ -233,7 +233,7 @@ final class ContactsPickerViewController: UIViewController {
 
 // MARK: - UISearchResultsUpdating
 
-extension ContactsPickerViewController: UISearchResultsUpdating {
+public extension ContactsPickerViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text, searchController.isActive {
@@ -259,7 +259,7 @@ extension ContactsPickerViewController: UISearchResultsUpdating {
 
 // MARK: - UISearchBarDelegate
 
-extension ContactsPickerViewController: UISearchBarDelegate {
+public extension ContactsPickerViewController: UISearchBarDelegate {
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         
@@ -268,7 +268,7 @@ extension ContactsPickerViewController: UISearchBarDelegate {
 
 // MARK: - TableViewDelegate
 
-extension ContactsPickerViewController: UITableViewDelegate {
+public extension ContactsPickerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let contact = contact(at: indexPath) else { return }
@@ -280,7 +280,7 @@ extension ContactsPickerViewController: UITableViewDelegate {
 
 // MARK: - TableViewDataSource
 
-extension ContactsPickerViewController: UITableViewDataSource {
+public extension ContactsPickerViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         if searchController.isActive { return 1 }

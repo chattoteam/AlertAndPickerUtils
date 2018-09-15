@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIAlertController {
+public extension UIAlertController {
     
     /// Add Image Picker
     ///
@@ -119,7 +119,7 @@ final class ImagePickerViewController: UIViewController {
 
 // MARK: - CollectionViewDelegate
 
-extension ImagePickerViewController: UICollectionViewDelegate {
+public extension ImagePickerViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let image = images[indexPath.item]
@@ -151,7 +151,7 @@ extension ImagePickerViewController: UICollectionViewDelegate {
 
 // MARK: - CollectionViewDataSource
 
-extension ImagePickerViewController: UICollectionViewDataSource {
+public extension ImagePickerViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -170,7 +170,7 @@ extension ImagePickerViewController: UICollectionViewDataSource {
 
 // MARK: - CollectionViewDelegateFlowLayout
 
-extension ImagePickerViewController: UICollectionViewDelegateFlowLayout {
+public extension ImagePickerViewController: UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         Log("view size = \(view.bounds), collectionView = \(collectionView.size), itemSize = \(itemSize)")

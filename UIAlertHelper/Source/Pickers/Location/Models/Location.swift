@@ -30,7 +30,7 @@ public class Location: NSObject {
 
 import MapKit
 
-extension Location: MKAnnotation {
+public extension Location: MKAnnotation {
     
     @objc public var coordinate: CLLocationCoordinate2D {
 		return location.coordinate

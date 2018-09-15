@@ -1,10 +1,10 @@
 import UIKit
 import Foundation
 
-// MARK: - Designable Extension
+// MARK: - Designable public extension
 
 @IBDesignable
-extension UIView {
+public extension UIView {
     
     @IBInspectable
     /// Should the corner be as circle
@@ -189,7 +189,7 @@ public extension UIView {
     }
 }
 
-extension UIView {
+public extension UIView {
     
     func superview<T>(of type: T.Type) -> T? {
         return superview as? T ?? superview.flatMap { $0.superview(of: T.self) }
@@ -221,7 +221,7 @@ public extension UIView {
     }
 }
 
-extension UIView {
+public extension UIView {
     
     func searchVisualEffectsSubview() -> UIVisualEffectView? {
         if let visualEffectView = self as? UIVisualEffectView {
