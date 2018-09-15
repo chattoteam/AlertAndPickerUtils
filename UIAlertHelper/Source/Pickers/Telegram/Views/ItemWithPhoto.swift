@@ -1,6 +1,6 @@
 import UIKit
 
-final class ItemWithPhoto: UICollectionViewCell {
+public class ItemWithPhoto: UICollectionViewCell {
     
     lazy var imageView: UIImageView = {
         $0.backgroundColor = .clear
@@ -85,7 +85,7 @@ final class ItemWithPhoto: UICollectionViewCell {
         view.circleCorner = true
     }
     
-    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+    override public func  apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
         layoutIfNeeded()
     }

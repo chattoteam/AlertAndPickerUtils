@@ -26,7 +26,7 @@ public extension UIAlertController {
 
 
 
-final class TelegramPickerViewController: UIViewController {
+public class TelegramPickerViewController: UIViewController {
     
     
     
@@ -141,12 +141,12 @@ final class TelegramPickerViewController: UIViewController {
     
     // MARK: Initialize
     
-    required init(selection: @escaping TelegramSelection) {
+    required public init(selection: @escaping TelegramSelection) {
         self.selection = selection
         super.init(nibName: nil, bundle: nil)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -154,11 +154,11 @@ final class TelegramPickerViewController: UIViewController {
         Log("has deinitialized")
     }
     
-    override func loadView() {
+    override public func  loadView() {
         view = tableView
     }
     
-    override func viewDidLoad() {
+    override public func  viewDidLoad() {
         super.viewDidLoad()
         
         if UIDevice.current.userInterfaceIdiom == .pad {
@@ -168,7 +168,7 @@ final class TelegramPickerViewController: UIViewController {
         updatePhotos()
     }
         
-    override func viewDidLayoutSubviews() {
+    override public func  viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         layoutSubviews()
     }
@@ -298,31 +298,31 @@ final class TelegramPickerViewController: UIViewController {
 
 // MARK: - TableViewDelegate
 
-public extension TelegramPickerViewController: UICollectionViewDelegate {
+extension TelegramPickerViewController: UICollectionViewDelegate {
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         layout.selectedCellIndexPath = layout.selectedCellIndexPath == indexPath ? nil : indexPath
         action(withAsset: assets[indexPath.item], at: indexPath)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         action(withAsset: assets[indexPath.item], at: indexPath)
     }
 }
 
 // MARK: - CollectionViewDataSource
 
-public extension TelegramPickerViewController: UICollectionViewDataSource {
+extension TelegramPickerViewController: UICollectionViewDataSource {
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return assets.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ItemWithPhoto.self), for: indexPath) as? ItemWithPhoto else { return UICollectionViewCell() }
         
         let asset = assets[indexPath.item]
@@ -340,9 +340,9 @@ public extension TelegramPickerViewController: UICollectionViewDataSource {
 
 // MARK: - PhotoLayoutDelegate
 
-public extension TelegramPickerViewController: PhotoLayoutDelegate {
+extension TelegramPickerViewController: PhotoLayoutDelegate {
     
-    func collectionView(_ collectionView: UICollectionView, sizeForPhotoAtIndexPath indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, sizeForPhotoAtIndexPath indexPath: IndexPath) -> CGSize {
         let size: CGSize = sizeForItem(asset: assets[indexPath.item])
         //Log("size = \(size)")
         return size
@@ -351,9 +351,9 @@ public extension TelegramPickerViewController: PhotoLayoutDelegate {
 
 // MARK: - TableViewDelegate
 
-public extension TelegramPickerViewController: UITableViewDelegate {
+extension TelegramPickerViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Log("indexPath = \(indexPath)")
         DispatchQueue.main.async {
             self.action(for: self.buttons[indexPath.row])
@@ -363,16 +363,16 @@ public extension TelegramPickerViewController: UITableViewDelegate {
 
 // MARK: - TableViewDataSource
 
-public extension TelegramPickerViewController: UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
+extension TelegramPickerViewController: UITableViewDataSource {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return buttons.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: LikeButtonCell.identifier) as! LikeButtonCell
         cell.textLabel?.font = font(for: buttons[indexPath.row])
         cell.textLabel?.text = title(for: buttons[indexPath.row])

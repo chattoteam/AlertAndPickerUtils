@@ -70,7 +70,7 @@ class ItemWithImage: UICollectionViewCell {
         updateAppearance(forPoint: selectedPoint)
     }
     
-    override func sizeThatFits(_ size: CGSize) -> CGSize {
+    override public func  sizeThatFits(_ size: CGSize) -> CGSize {
         contentView.size = size
         layout()
         return size

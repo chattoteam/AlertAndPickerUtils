@@ -1,6 +1,6 @@
 import UIKit
 
-final class LikeButtonCell: UITableViewCell {
+public class LikeButtonCell: UITableViewCell {
     
     // MARK: Properties
     
@@ -17,11 +17,11 @@ final class LikeButtonCell: UITableViewCell {
         textLabel?.textColor = UIColor(hex: 0x007AFF)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    override public func  layoutSubviews() {
         super.layoutSubviews()
         textLabel?.textAlignment = .center
     }

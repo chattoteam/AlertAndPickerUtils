@@ -17,7 +17,7 @@ public extension UIAlertController {
     }
 }
 
-final class TwoTextFieldsViewController: UIViewController {
+public class TwoTextFieldsViewController: UIViewController {
     
     fileprivate lazy var textFieldView: UIView = UIView()
     fileprivate lazy var textFieldOne: TextField = TextField()
@@ -50,7 +50,7 @@ final class TwoTextFieldsViewController: UIViewController {
         //preferredContentSize.height = height * 2 + vInset
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -58,12 +58,12 @@ final class TwoTextFieldsViewController: UIViewController {
         Log("has deinitialized")
     }
     
-    override func viewDidLoad() {
+    override public func  viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-    override func viewDidLayoutSubviews() {
+    override public func  viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         textFieldView.width = view.width - hInset * 2

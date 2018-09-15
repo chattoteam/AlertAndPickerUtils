@@ -225,7 +225,7 @@ import UIKit
         commonSetup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         minColor = aDecoder.decodeObject(forKey: "minColor") as? UIColor ?? UIColor.lightGray
@@ -244,7 +244,7 @@ import UIKit
         commonSetup()
     }
     
-    override func encode(with aCoder: NSCoder) {
+    override public func  encode(with aCoder: NSCoder) {
         super.encode(with: aCoder)
         
         aCoder.encode(minColor, forKey: "minColor")
@@ -328,7 +328,7 @@ import UIKit
     
     //MARK: - Touch Tracking
     
-    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    override public func  beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         let pt = touch.location(in: self)
         
         let center = _thumbLayer.position
@@ -341,7 +341,7 @@ import UIKit
         return false
     }
     
-    override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    override public func  continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         let pt = touch.location(in: self)
         let newValue = valueForLocation(point: pt)
         set(value: newValue, animated: false)
@@ -352,7 +352,7 @@ import UIKit
         return true
     }
     
-    override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
+    override public func  endTracking(_ touch: UITouch?, with event: UIEvent?) {
         if let pt = touch?.location(in: self){
             let newValue = valueForLocation(point: pt)
             set(value: newValue, animated: false)

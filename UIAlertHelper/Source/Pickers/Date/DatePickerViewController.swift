@@ -17,7 +17,7 @@ public extension UIAlertController {
     }
 }
 
-final class DatePickerViewController: UIViewController {
+public class DatePickerViewController: UIViewController {
     
     public typealias Action = (Date) -> Void
     
@@ -28,7 +28,7 @@ final class DatePickerViewController: UIViewController {
         return $0
     }(UIDatePicker())
     
-    required init(mode: UIDatePickerMode, date: Date? = nil, minimumDate: Date? = nil, maximumDate: Date? = nil, action: Action?) {
+    required public init(mode: UIDatePickerMode, date: Date? = nil, minimumDate: Date? = nil, maximumDate: Date? = nil, action: Action?) {
         super.init(nibName: nil, bundle: nil)
         datePicker.datePickerMode = mode
         datePicker.date = date ?? Date()
@@ -37,7 +37,7 @@ final class DatePickerViewController: UIViewController {
         self.action = action
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -45,7 +45,7 @@ final class DatePickerViewController: UIViewController {
         Log("has deinitialized")
     }
     
-    override func loadView() {
+    override public func loadView() {
         view = datePicker
     }
     

@@ -25,7 +25,7 @@ public extension UIAlertController {
     }
 }
 
-final class LocalePickerViewController: UIViewController {
+public class LocalePickerViewController: UIViewController {
     
     // MARK: UI Metrics
     
@@ -88,13 +88,13 @@ final class LocalePickerViewController: UIViewController {
     
     // MARK: Initialize
     
-    required init(type: Kind, selection: @escaping Selection) {
+    required public init(type: Kind, selection: @escaping Selection) {
         self.type = type
         self.selection = selection
         super.init(nibName: nil, bundle: nil)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -104,11 +104,11 @@ final class LocalePickerViewController: UIViewController {
         Log("has deinitialized")
     }
     
-    override func loadView() {
+    override public func  loadView() {
         view = tableView
     }
     
-    override func viewDidLoad() {
+    override public func  viewDidLoad() {
         super.viewDidLoad()
         
         view.addSubview(indicatorView)
@@ -132,7 +132,7 @@ final class LocalePickerViewController: UIViewController {
         updateInfo()
     }
     
-    override func viewWillLayoutSubviews() {
+    override public func  viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         tableView.tableHeaderView?.height = 57
         searchController.searchBar.sizeToFit()
@@ -140,7 +140,7 @@ final class LocalePickerViewController: UIViewController {
         searchController.searchBar.frame.size.height = searchView.frame.size.height
     }
     
-    override func viewDidLayoutSubviews() {
+    override public func  viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         indicatorView.center = view.center
         preferredContentSize.height = tableView.contentSize.height
@@ -235,9 +235,9 @@ final class LocalePickerViewController: UIViewController {
 
 // MARK: - UISearchResultsUpdating
 
-public extension LocalePickerViewController: UISearchResultsUpdating {
+extension LocalePickerViewController: UISearchResultsUpdating {
     
-    func updateSearchResults(for searchController: UISearchController) {
+    public func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text, searchController.isActive {
             filteredInfo = []
             if searchText.count > 0, let values = orderedInfo[String(searchText[searchText.startIndex])] {
@@ -259,18 +259,17 @@ public extension LocalePickerViewController: UISearchResultsUpdating {
 
 // MARK: - UISearchBarDelegate
 
-public extension LocalePickerViewController: UISearchBarDelegate {
+extension LocalePickerViewController: UISearchBarDelegate {
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+    public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
 
     }
 }
 
 // MARK: - TableViewDelegate
-
-public extension LocalePickerViewController: UITableViewDelegate {
+extension LocalePickerViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let info = info(at: indexPath) else { return }
         selectedInfo = info
         selection?(selectedInfo)
@@ -279,14 +278,14 @@ public extension LocalePickerViewController: UITableViewDelegate {
 
 // MARK: - TableViewDataSource
 
-public extension LocalePickerViewController: UITableViewDataSource {
+extension LocalePickerViewController: UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         if searchController.isActive { return 1 }
         return sortedInfoKeys.count
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searchController.isActive { return filteredInfo.count }
         if let infoForSection = orderedInfo[sortedInfoKeys[section]] {
             return infoForSection.count
@@ -294,23 +293,23 @@ public extension LocalePickerViewController: UITableViewDataSource {
         return 0
     }
     
-    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+    public func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
         if searchController.isActive { return 0 }
         tableView.scrollToRow(at: IndexPath(row: 0, section: index), at: .top , animated: false)
         return sortedInfoKeys.index(of: title)!
     }
     
-    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+    public func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         if searchController.isActive { return nil }
         return sortedInfoKeys
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if searchController.isActive { return nil }
         return sortedInfoKeys[section]
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let info = info(at: indexPath) else { return UITableViewCell() }
         

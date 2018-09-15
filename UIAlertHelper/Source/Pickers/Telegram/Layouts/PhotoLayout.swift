@@ -42,7 +42,7 @@ class PhotoLayout: UICollectionViewLayout {
         super.invalidateLayout()
     }
     
-    override func prepare() {
+    override public func  prepare() {
         super.prepare()
         previousAttributes = currentAttributes
         
@@ -73,23 +73,23 @@ class PhotoLayout: UICollectionViewLayout {
         contentSize.height = height
     }
     
-    override func initialLayoutAttributesForAppearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    override public func  initialLayoutAttributesForAppearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return previousAttributes[itemIndexPath.item]
     }
     
-    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    override public func  layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return currentAttributes[indexPath.item]
     }
     
-    override func finalLayoutAttributesForDisappearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    override public func  finalLayoutAttributesForDisappearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return layoutAttributesForItem(at: itemIndexPath)
     }
     
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    override public func  layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return currentAttributes.filter { rect.intersects($0.frame) }
     }
     
-    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+    override public func  shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         let oldBounds = collectionView.bounds
         if !oldBounds.size.equalTo(newBounds.size) {
             return true
@@ -99,7 +99,7 @@ class PhotoLayout: UICollectionViewLayout {
     
     
     
-    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
+    override public func  targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
         Log(selectedCellIndexPath)
         guard let selectedCellIndexPath = selectedCellIndexPath else { return proposedContentOffset }
         Log(selectedCellIndexPath)

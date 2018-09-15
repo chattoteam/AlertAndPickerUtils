@@ -17,7 +17,7 @@ public extension UIAlertController {
     }
 }
 
-final class OneTextFieldViewController: UIViewController {
+public class OneTextFieldViewController: UIViewController {
     
     fileprivate lazy var textField: TextField = TextField()
     
@@ -42,7 +42,7 @@ final class OneTextFieldViewController: UIViewController {
         preferredContentSize.height = ui.height + ui.vInset
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -50,12 +50,12 @@ final class OneTextFieldViewController: UIViewController {
         Log("has deinitialized")
     }
     
-    override func viewDidLoad() {
+    override public func  viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-    override func viewDidLayoutSubviews() {
+    override public func  viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         textField.width = view.width - ui.hInset * 2

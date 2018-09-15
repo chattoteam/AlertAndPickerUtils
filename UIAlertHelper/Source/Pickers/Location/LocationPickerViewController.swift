@@ -19,7 +19,7 @@ public extension UIAlertController {
     }
 }
 
-final class LocationPickerViewController: UIViewController {
+public class LocationPickerViewController: UIViewController {
 	
     struct CurrentLocationListener {
 		let once: Bool
@@ -129,11 +129,11 @@ final class LocationPickerViewController: UIViewController {
         let _ = searchController.view
 	}
 	
-	open override func loadView() {
+    override public func loadView() {
 		view = mapView
 	}
 	
-	open override func viewDidLoad() {
+	override public func viewDidLoad() {
 		super.viewDidLoad()
 		
         mapView.addSubview(scaleView)
@@ -274,7 +274,7 @@ final class LocationPickerViewController: UIViewController {
     }
 }
 
-public extension LocationPickerViewController: CLLocationManagerDelegate {
+extension LocationPickerViewController: CLLocationManagerDelegate {
     
 	public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 		guard let location = locations.first else { return }
@@ -286,7 +286,7 @@ public extension LocationPickerViewController: CLLocationManagerDelegate {
 
 // MARK: Searching
 
-public extension LocationPickerViewController: UISearchResultsUpdating {
+extension LocationPickerViewController: UISearchResultsUpdating {
 	public func updateSearchResults(for searchController: UISearchController) {
 		guard let term = searchController.searchBar.text else { return }
 		
@@ -349,7 +349,7 @@ public extension LocationPickerViewController: UISearchResultsUpdating {
 
 // MARK: Selecting location with gesture
 
-public extension LocationPickerViewController {
+extension LocationPickerViewController {
     @objc func addLocation(_ gestureRecognizer: UIGestureRecognizer) {
 		if gestureRecognizer.state == .began {
 			let point = gestureRecognizer.location(in: mapView)
@@ -365,7 +365,7 @@ public extension LocationPickerViewController {
 
 // MARK: MKMapViewDelegate
 
-public extension LocationPickerViewController: MKMapViewDelegate {
+extension LocationPickerViewController: MKMapViewDelegate {
 	public func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
 		if annotation is MKUserLocation { return nil }
 		
@@ -416,7 +416,7 @@ public extension LocationPickerViewController: MKMapViewDelegate {
 	}
 }
 
-public extension LocationPickerViewController: UIGestureRecognizerDelegate {
+extension LocationPickerViewController: UIGestureRecognizerDelegate {
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
@@ -424,7 +424,7 @@ public extension LocationPickerViewController: UIGestureRecognizerDelegate {
 
 // MARK: UISearchBarDelegate
 
-public extension LocationPickerViewController: UISearchBarDelegate {
+extension LocationPickerViewController: UISearchBarDelegate {
 	public func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
 		// dirty hack to show history when there is no text in search bar
 		// to be replaced later (hopefully)

@@ -1,6 +1,6 @@
 import UIKit
 
-final class SegmentedControl: UISegmentedControl {
+public class SegmentedControl: UISegmentedControl {
     
     public typealias Action = (Int) -> Swift.Void
     

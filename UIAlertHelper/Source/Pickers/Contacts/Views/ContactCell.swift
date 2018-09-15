@@ -1,6 +1,6 @@
 import UIKit
 
-final class ContactTableViewCell: UITableViewCell {
+public class ContactTableViewCell: UITableViewCell {
     
     // MARK: Properties
     
@@ -19,11 +19,11 @@ final class ContactTableViewCell: UITableViewCell {
         imageView?.maskToBounds = true
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    override public func  layoutSubviews() {
         super.layoutSubviews()
         let value: CGFloat = self.contentView.height - 8
         imageView?.size = CGSize(width: value, height: value)
@@ -31,7 +31,7 @@ final class ContactTableViewCell: UITableViewCell {
     }
     
     // MARK: Configure Selection
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override public func  setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         accessoryType = selected ? .checkmark : .none
     }

@@ -1,13 +1,13 @@
 import UIKit
 import MapKit
 
-final class LocationSearchResultsViewController: UITableViewController {
+public class LocationSearchResultsViewController: UITableViewController {
 	var locations: [Location] = []
 	var onSelectLocation: ((Location) -> ())?
 	var isShowingHistory = false
 	var searchHistoryLabel: String?
 	
-	override func viewDidLoad() {
+	override public func  viewDidLoad() {
 		super.viewDidLoad()
 		extendedLayoutIncludesOpaqueBars = true
         tableView.tableFooterView = UIView()
@@ -19,20 +19,20 @@ final class LocationSearchResultsViewController: UITableViewController {
         tableView.separatorEffect = UIVibrancyEffect(blurEffect: blurEffect)
 	}
     
-    override func viewDidLayoutSubviews() {
+    override public func  viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         preferredContentSize.height = tableView.contentSize.height
     }
 	
-	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+	override public func  tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		return isShowingHistory ? searchHistoryLabel : nil
 	}
 
-	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	override public func  tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return locations.count
 	}
 
-	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+	override public func  tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "LocationCell")
 			?? UITableViewCell(style: .subtitle, reuseIdentifier: "LocationCell")
 
@@ -46,7 +46,7 @@ final class LocationSearchResultsViewController: UITableViewController {
 		return cell
 	}
 	
-	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+	override public func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		onSelectLocation?(locations[indexPath.row])
 	}
 }
