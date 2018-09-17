@@ -61,6 +61,7 @@
 		6A12EEFA214D2D5F00D4C16C /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12EEC5214D2D5F00D4C16C /* TextField.swift */; };
 		6A12EEFB214D2D5F00D4C16C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12EEC6214D2D5F00D4C16C /* Button.swift */; };
 		A5172152214F460E001DDC54 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5172151214F460D001DDC54 /* Bundle.swift */; };
+		A5172154214F9EDD001DDC54 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A5172153214F9EDC001DDC54 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +121,7 @@
 		6A12EEC5214D2D5F00D4C16C /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		6A12EEC6214D2D5F00D4C16C /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		A5172151214F460D001DDC54 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		A5172153214F9EDC001DDC54 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		6A12EE61214D2D2A00D4C16C = {
 			isa = PBXGroup;
 			children = (
+				A5172153214F9EDC001DDC54 /* README.md */,
 				6A12EE6D214D2D2A00D4C16C /* UIAlertHelper */,
 				6A12EE6C214D2D2A00D4C16C /* Products */,
 			);
@@ -495,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5172154214F9EDD001DDC54 /* README.md in Resources */,
 				6A12EEDA214D2D5F00D4C16C /* Countries.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
