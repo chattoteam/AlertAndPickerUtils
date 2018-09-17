@@ -24,7 +24,7 @@ public class DatePickerViewController: UIViewController {
     fileprivate var action: Action?
     
     fileprivate lazy var datePicker: UIDatePicker = { [unowned self] in
-        $0.addTarget(self, action: #selector(DatePickerViewController.actionForDatePicker), for: .valueChanged)
+        $0.addTarget(self, action: #selector(actionForDatePicker), for: .valueChanged)
         return $0
     }(UIDatePicker())
     
