@@ -12,4 +12,8 @@ class Bundle {
     static var alertAndPicker: Foundation.Bundle {
         return Foundation.Bundle(for: Bundle.self)
     }
+    
+    static var main: Foundation.Bundle {
+        return Foundation.Bundle(for: Bundle.self)
+    }
 }
