@@ -29,7 +29,7 @@ public class OneTextFieldViewController: UIViewController {
     
     
     init(vInset: CGFloat = 12, configuration: TextField.Config?) {
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: Bundle.alertAndPicker)
         view.addSubview(textField)
         ui.vInset = vInset
         

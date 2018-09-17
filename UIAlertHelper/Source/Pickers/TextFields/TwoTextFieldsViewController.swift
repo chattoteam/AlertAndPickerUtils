@@ -31,7 +31,7 @@ public class TwoTextFieldsViewController: UIViewController {
         self.height = height
         self.hInset = hInset
         self.vInset = vInset
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: Bundle.alertAndPicker)
         view.addSubview(textFieldView)
         
         textFieldView.addSubview(textFieldOne)

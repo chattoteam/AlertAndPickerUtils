@@ -118,7 +118,7 @@ public class PhotoLibraryPickerViewController: UIViewController {
     // MARK: Initialize
     
     required public init(flow: UICollectionViewScrollDirection, paging: Bool, selection: Selection) {
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: Bundle.alertAndPicker)
         
         self.selection = selection
         self.layout.scrollDirection = flow

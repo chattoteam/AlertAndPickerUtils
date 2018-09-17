@@ -90,7 +90,7 @@ public class ImagePickerViewController: UIViewController {
     // MARK: Initialize
     
     required public init(flow: UICollectionViewScrollDirection, paging: Bool, images: [UIImage], selection: SelectionType?) {
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: Bundle.alertAndPicker)
         self.images = images
         self.selection = selection
         self.layout.scrollDirection = flow

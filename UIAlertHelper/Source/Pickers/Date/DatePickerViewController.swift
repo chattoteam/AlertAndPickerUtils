@@ -29,7 +29,7 @@ public class DatePickerViewController: UIViewController {
     }(UIDatePicker())
     
     required public init(mode: UIDatePickerMode, date: Date? = nil, minimumDate: Date? = nil, maximumDate: Date? = nil, action: Action?) {
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: Bundle.alertAndPicker)
         datePicker.datePickerMode = mode
         datePicker.date = date ?? Date()
         datePicker.minimumDate = minimumDate

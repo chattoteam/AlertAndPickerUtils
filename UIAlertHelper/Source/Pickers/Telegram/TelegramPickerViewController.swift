@@ -142,7 +142,7 @@ public class TelegramPickerViewController: UIViewController {
     
     required public init(selection: @escaping TelegramSelection) {
         self.selection = selection
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: Bundle.alertAndPicker)
     }
     
     required public init?(coder aDecoder: NSCoder) {

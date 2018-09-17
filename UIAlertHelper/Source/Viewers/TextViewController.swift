@@ -38,7 +38,7 @@ public class TextViewerViewController: UIViewController {
     
     
     init(text kind: Kind) {
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: Bundle.alertAndPicker)
         
         switch kind {
         case .text(let text):

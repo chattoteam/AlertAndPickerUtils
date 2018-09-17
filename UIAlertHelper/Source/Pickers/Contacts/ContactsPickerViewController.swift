@@ -83,7 +83,7 @@ public class ContactsPickerViewController: UIViewController {
     
     required public init(selection: Selection?) {
         self.selection = selection
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: Bundle.alertAndPicker)
     }
     
     required public init?(coder aDecoder: NSCoder) {

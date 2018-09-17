@@ -91,7 +91,7 @@ public class LocalePickerViewController: UIViewController {
     required public init(type: Kind, selection: @escaping Selection) {
         self.type = type
         self.selection = selection
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: Bundle.alertAndPicker)
     }
     
     required public init?(coder aDecoder: NSCoder) {

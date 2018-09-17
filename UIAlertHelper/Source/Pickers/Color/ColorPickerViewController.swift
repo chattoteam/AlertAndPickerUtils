@@ -17,7 +17,7 @@ public extension UIAlertController {
         }
         buttonSelection.isEnabled = true
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.alertAndPicker)
         guard let vc = storyboard.instantiateViewController(withIdentifier: "ColorPicker") as? ColorPickerViewController else { return }
         set(vc: vc)
         
