@@ -48,7 +48,6 @@
 		6A12EEEC214D2D5F00D4C16C /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12EEAD214D2D5F00D4C16C /* Contacts.swift */; };
 		6A12EEED214D2D5F00D4C16C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12EEAF214D2D5F00D4C16C /* Contact.swift */; };
 		6A12EEEE214D2D5F00D4C16C /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12EEB1214D2D5F00D4C16C /* ContactCell.swift */; };
-		6A12EEEF214D2D5F00D4C16C /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12EEB3214D2D5F00D4C16C /* ColorPickerViewController.swift */; };
 		6A12EEF0214D2D5F00D4C16C /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12EEB5214D2D5F00D4C16C /* DatePickerViewController.swift */; };
 		6A12EEF1214D2D5F00D4C16C /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12EEB7214D2D5F00D4C16C /* ImagePickerViewController.swift */; };
 		6A12EEF2214D2D5F00D4C16C /* ItemWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12EEB9214D2D5F00D4C16C /* ItemWithImage.swift */; };
@@ -108,7 +107,6 @@
 		6A12EEAD214D2D5F00D4C16C /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		6A12EEAF214D2D5F00D4C16C /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		6A12EEB1214D2D5F00D4C16C /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
-		6A12EEB3214D2D5F00D4C16C /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		6A12EEB5214D2D5F00D4C16C /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		6A12EEB7214D2D5F00D4C16C /* ImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		6A12EEB9214D2D5F00D4C16C /* ItemWithImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemWithImage.swift; sourceTree = "<group>"; };
@@ -223,7 +221,6 @@
 				6A12EEA0214D2D5E00D4C16C /* Location */,
 				6A12EEA8214D2D5E00D4C16C /* PickerView */,
 				6A12EEAA214D2D5F00D4C16C /* Contacts */,
-				6A12EEB2214D2D5F00D4C16C /* Color */,
 				6A12EEB4214D2D5F00D4C16C /* Date */,
 				6A12EEB6214D2D5F00D4C16C /* Image */,
 				6A12EEBA214D2D5F00D4C16C /* Telegram */,
@@ -364,14 +361,6 @@
 				6A12EEB1214D2D5F00D4C16C /* ContactCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		6A12EEB2214D2D5F00D4C16C /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				6A12EEB3214D2D5F00D4C16C /* ColorPickerViewController.swift */,
-			);
-			path = Color;
 			sourceTree = "<group>";
 		};
 		6A12EEB4214D2D5F00D4C16C /* Date */ = {
@@ -559,7 +548,6 @@
 				6A12EEDB214D2D5F00D4C16C /* LocaleStore.swift in Sources */,
 				6A12EECF214D2D5F00D4C16C /* UIColor+Extensions.swift in Sources */,
 				6A12EEF0214D2D5F00D4C16C /* DatePickerViewController.swift in Sources */,
-				6A12EEEF214D2D5F00D4C16C /* ColorPickerViewController.swift in Sources */,
 				6A12EEF7214D2D5F00D4C16C /* Label.swift in Sources */,
 				6A12EEE7214D2D5F00D4C16C /* SearchHistoryManager.swift in Sources */,
 				6A12EEDD214D2D5F00D4C16C /* LocalePickerViewController.swift in Sources */,
