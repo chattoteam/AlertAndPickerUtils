@@ -19,11 +19,6 @@ Advanced usage of native UIAlertController with TextField, TextView, DatePicker,
 
 ## Usage
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-simple.gif" width="350" />
-<img src="Assets/gifs/alert-simple.gif" width="350" />
-</div>
-
 - New Alert
 
 ```swift
@@ -66,11 +61,6 @@ alert.show(animated: true, vibrate: true) {
 // completion handler
 }
 ```
-<div align = "center">
-<img src="Assets/gifs/actionSheet-simple-image.gif" width="350" />
-<img src="Assets/gifs/alert-simple-image.gif" width="350" />
-</div>
-
 
 ## Set Content ViewController
 
@@ -99,11 +89,6 @@ In native UIAlertController you can only add `UITextField` to `.alert` style wit
 ## One TextField Picker
 
 You can use both styles `.alert` and `.actionSheet` of `UIAlertController`.
-
-<div align = "center">
-<img src="Assets/gifs/actionSheet-textField-1.gif" width="350" />
-<img src="Assets/gifs/alert-textField-1.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: self.alertStyle, title: "TextField")                  
@@ -134,10 +119,6 @@ alert.show()
 
 You can use both styles `.alert` and `.actionSheet` of `UIAlertController`.
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-textField-2.gif" width="350" />
-<img src="Assets/gifs/alert-textField-2.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .alert, title: "Login")
@@ -187,11 +168,6 @@ alert.show()
 
 `UIDatePicker` does not look very much in `.alert` style.
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-datePicker.gif" width="350" />
-<img src="Assets/gifs/alert-datePicker.gif" width="350" />
-</div>
-
 ```swift
 let alert = UIAlertController(style: .actionSheet, title: "Select date")
 alert.addDatePicker(mode: .dateAndTime, date: date, minimumDate: minDate, maximumDate: maxDate) { date in
@@ -204,11 +180,6 @@ alert.show()
 ## PickerView
 
 Example how to use `UIPickerView` as `contentViewController` and change height of the `UIAlertController`.
-
-<div align = "center">
-<img src="Assets/gifs/actionSheet-pickerView.gif" width="350" />
-<img src="Assets/gifs/alert-pickerView.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .actionSheet, title: "Picker View", message: "Preferred Content Height")
@@ -232,10 +203,6 @@ alert.show()
 
 * #### Country Picker
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-countryPicker.gif" width="350" />
-<img src="Assets/gifs/alert-countryPicker.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .actionSheet, message: "Select Country")
@@ -248,10 +215,6 @@ alert.show()
 
 * #### Phone Code Picker
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-phoneCodePicker.gif" width="350" />
-<img src="Assets/gifs/alert-phoneCodePicker.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .actionSheet, title: "Phone Codes")
@@ -264,10 +227,6 @@ alert.show()
 
 * #### Currency Picker
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-currencyPicker.gif" width="350" />
-<img src="Assets/gifs/alert-currencyPicker.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .actionSheet, title: "Currencies")
@@ -281,11 +240,6 @@ alert.show()
 ```
 
 ## Image Picker
-
-<div align = "center">
-<img src="Assets/gifs/actionSheet-imagePicker-h.gif" width="350" />
-<img src="Assets/gifs/actionSheet-imagePicker-v.gif" width="350" />
-</div>
 
 * Horizontal Image Picker with paging and single selection:
 
@@ -322,9 +276,6 @@ alert.show()
 
 ## PhotoLibrary Picker
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-photoLibraryPicker.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .actionSheet)
@@ -342,10 +293,6 @@ alert.show()
 
 Example how to use UIViewController instantiated from Storyboard with Autolayout as `contentViewController` in the `UIAlertController`.
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-colorPicker.gif" width="350" />
-<img src="Assets/gifs/alert-colorPicker.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .actionSheet)
@@ -358,10 +305,6 @@ alert.show()
 
 ## Contacts Picker
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-contactsPicker.gif" width="350" />
-<img src="Assets/gifs/alert-contactsPicker.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .actionSheet)
@@ -374,9 +317,6 @@ alert.show()
 
 ## Location Picker
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-locationPicker.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .actionSheet)
@@ -389,9 +329,6 @@ alert.show()
 
 ## Telegram Picker
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-telegramPicker.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .actionSheet)
@@ -411,10 +348,6 @@ alert.show()
 
 ## TextViewer
 
-<div align = "center">
-<img src="Assets/gifs/actionSheet-textViewer.gif" width="350" />
-<img src="Assets/gifs/alert-textViewer.gif" width="350" />
-</div>
 
 ```swift
 let alert = UIAlertController(style: .actionSheet)
