@@ -84,7 +84,7 @@ public class LocalePickerViewController: UIViewController {
     fileprivate lazy var indicatorView: UIActivityIndicatorView = {
         $0.color = .lightGray
         return $0
-    }(UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge))
+    }(UIActivityIndicatorView(style: .whiteLarge))
     
     // MARK: Initialize
     

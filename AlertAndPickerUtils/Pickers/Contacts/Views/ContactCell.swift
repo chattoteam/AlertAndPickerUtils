@@ -11,7 +11,7 @@ public class ContactTableViewCell: UITableViewCell {
     
     // MARK: Initialize
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
         backgroundColor = nil
