@@ -12,7 +12,7 @@ public extension UIAlertController {
     ///   - images: for content to select
     ///   - selection: type and action for selection of image/images
     
-    func addPhotoLibraryPicker(flow: UICollectionView.ScrollDirection, paging: Bool, selection: PhotoLibraryPickerViewController.Selection) {
+    public func addPhotoLibraryPicker(flow: UICollectionView.ScrollDirection, paging: Bool, selection: PhotoLibraryPickerViewController.Selection) {
         let selection: PhotoLibraryPickerViewController.Selection = selection
         var asset: PHAsset?
         var assets: [PHAsset] = []

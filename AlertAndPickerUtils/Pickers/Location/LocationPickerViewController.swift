@@ -11,7 +11,7 @@ public extension UIAlertController {
     /// - Parameters:
     ///   - selection: type and action for selection of asset/assets
     
-    func addLocationPicker(location: Location? = nil, completion: @escaping LocationPickerViewController.CompletionHandler) {
+    public func addLocationPicker(location: Location? = nil, completion: @escaping LocationPickerViewController.CompletionHandler) {
         let vc = LocationPickerViewController()
         vc.location = location
         vc.completion = completion

@@ -8,7 +8,7 @@ public extension UIAlertController {
     ///   - values: values for picker view
     ///   - initialSelection: initial selection of picker view
     ///   - action: action for selected value of picker view
-    func addPickerView(values: PickerViewViewController.Values,  initialSelection: PickerViewViewController.Index? = nil, action: PickerViewViewController.Action?) {
+    public func addPickerView(values: PickerViewViewController.Values,  initialSelection: PickerViewViewController.Index? = nil, action: PickerViewViewController.Action?) {
         let pickerView = PickerViewViewController(values: values, initialSelection: initialSelection, action: action)
         set(vc: pickerView, height: 216)
     }

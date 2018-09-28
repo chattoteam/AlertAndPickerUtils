@@ -7,7 +7,7 @@ public extension UIAlertController {
     /// - Parameters:
     ///   - text: text kind
     
-    func addTextViewer(text: TextViewerViewController.Kind) {
+    public func addTextViewer(text: TextViewerViewController.Kind) {
         let textViewer = TextViewerViewController(text: text)
         set(vc: textViewer)
     }

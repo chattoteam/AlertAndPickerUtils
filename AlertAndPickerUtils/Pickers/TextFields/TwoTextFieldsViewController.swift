@@ -11,7 +11,7 @@ public extension UIAlertController {
     ///   - textFieldOne: first textField
     ///   - textFieldTwo: second textField
     
-    func addTwoTextFields(height: CGFloat = 58, hInset: CGFloat = 0, vInset: CGFloat = 0, textFieldOne: TextField.Config?, textFieldTwo: TextField.Config?) {
+    public func addTwoTextFields(height: CGFloat = 58, hInset: CGFloat = 0, vInset: CGFloat = 0, textFieldOne: TextField.Config?, textFieldTwo: TextField.Config?) {
         let textField = TwoTextFieldsViewController(height: height, hInset: hInset, vInset: vInset, textFieldOne: textFieldOne, textFieldTwo: textFieldTwo)
         set(vc: textField, height: height * 2 + 2 * vInset)
     }

@@ -8,7 +8,7 @@ public extension UIAlertController {
     ///   - type: country, phoneCode or currency
     ///   - action: for selected locale
     
-    func addLocalePicker(type: LocalePickerViewController.Kind, selection: @escaping LocalePickerViewController.Selection) {
+    public func addLocalePicker(type: LocalePickerViewController.Kind, selection: @escaping LocalePickerViewController.Selection) {
         var info: LocaleInfo?
         let selection: LocalePickerViewController.Selection = selection
         let buttonSelect: UIAlertAction = UIAlertAction(title: "Select", style: .default) { action in

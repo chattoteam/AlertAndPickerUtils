@@ -8,7 +8,7 @@ public extension UIAlertController {
     /// - Parameters:
     ///   - selection: action for selection of contact
     
-    func addContactsPicker(selection: @escaping ContactsPickerViewController.Selection) {
+    public func addContactsPicker(selection: @escaping ContactsPickerViewController.Selection) {
         let selection: ContactsPickerViewController.Selection = selection
         var contact: Contact?
         

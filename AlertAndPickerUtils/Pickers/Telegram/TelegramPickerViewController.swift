@@ -18,7 +18,7 @@ public extension UIAlertController {
     /// - Parameters:
     ///   - selection: type and action for selection of asset/assets
     
-    func addTelegramPicker(selection: @escaping TelegramSelection) {
+    public func addTelegramPicker(selection: @escaping TelegramSelection) {
         let vc = TelegramPickerViewController(selection: selection)
         set(vc: vc)
     }
