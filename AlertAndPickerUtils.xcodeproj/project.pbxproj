@@ -7,36 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AD240FE22015DA90004ABDC /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD240FD22015DA90004ABDC /* CurrencyCell.swift */; };
 		A5B529C6215249C900579F6B /* AlertAndPickerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A5B529C4215249C900579F6B /* AlertAndPickerUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5B529CD21524A2D00579F6B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A5B529CC21524A2D00579F6B /* README.md */; };
-		A5B52AA721524A8700579F6B /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5B52A5821524A8600579F6B /* Countries.bundle */; };
-		A5B52AA821524A8700579F6B /* LocaleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A5A21524A8600579F6B /* LocaleStore.swift */; };
-		A5B52AA921524A8700579F6B /* LocaleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A5C21524A8600579F6B /* LocaleInfo.swift */; };
-		A5B52AAA21524A8700579F6B /* LocalePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A5D21524A8600579F6B /* LocalePickerViewController.swift */; };
-		A5B52AAB21524A8700579F6B /* PhoneCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A5F21524A8600579F6B /* PhoneCodeCell.swift */; };
-		A5B52AAC21524A8700579F6B /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A6021524A8600579F6B /* CurrencyCell.swift */; };
-		A5B52AAD21524A8700579F6B /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A6121524A8600579F6B /* CountryCell.swift */; };
 		A5B52AAE21524A8700579F6B /* TwoTextFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A6321524A8600579F6B /* TwoTextFieldsViewController.swift */; };
 		A5B52AAF21524A8700579F6B /* OneTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A6421524A8600579F6B /* OneTextFieldViewController.swift */; };
 		A5B52AB021524A8700579F6B /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A6721524A8600579F6B /* Assets.swift */; };
 		A5B52AB121524A8700579F6B /* PhotoLibraryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A6821524A8600579F6B /* PhotoLibraryPickerViewController.swift */; };
-		A5B52AB221524A8700579F6B /* LocationSearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A6A21524A8600579F6B /* LocationSearchResultsViewController.swift */; };
-		A5B52AB321524A8700579F6B /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A6B21524A8600579F6B /* LocationPickerViewController.swift */; };
-		A5B52AB421524A8700579F6B /* SearchHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A6D21524A8600579F6B /* SearchHistoryManager.swift */; };
-		A5B52AB521524A8700579F6B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A6F21524A8600579F6B /* Location.swift */; };
-		A5B52AB621524A8700579F6B /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A7021524A8600579F6B /* Address.swift */; };
-		A5B52AB721524A8700579F6B /* PickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A7221524A8600579F6B /* PickerViewViewController.swift */; };
-		A5B52AB821524A8700579F6B /* ContactsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A7421524A8600579F6B /* ContactsPickerViewController.swift */; };
-		A5B52AB921524A8700579F6B /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A7621524A8600579F6B /* Contacts.swift */; };
-		A5B52ABA21524A8700579F6B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A7821524A8600579F6B /* Contact.swift */; };
-		A5B52ABB21524A8700579F6B /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A7A21524A8600579F6B /* ContactCell.swift */; };
-		A5B52ABC21524A8700579F6B /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A7D21524A8600579F6B /* DatePickerViewController.swift */; };
 		A5B52ABD21524A8700579F6B /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A7F21524A8600579F6B /* ImagePickerViewController.swift */; };
 		A5B52ABE21524A8700579F6B /* ItemWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A8121524A8600579F6B /* ItemWithImage.swift */; };
-		A5B52ABF21524A8700579F6B /* PhotoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A8421524A8700579F6B /* PhotoLayout.swift */; };
-		A5B52AC021524A8700579F6B /* TelegramPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A8521524A8700579F6B /* TelegramPickerViewController.swift */; };
-		A5B52AC121524A8700579F6B /* ItemWithPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A8721524A8700579F6B /* ItemWithPhoto.swift */; };
-		A5B52AC221524A8700579F6B /* LikeButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A8821524A8700579F6B /* LikeButtonCell.swift */; };
 		A5B52AC321524A8700579F6B /* AttributedTextBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A8B21524A8700579F6B /* AttributedTextBlock.swift */; };
 		A5B52AC421524A8700579F6B /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A8C21524A8700579F6B /* TextViewController.swift */; };
 		A5B52AC521524A8700579F6B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B52A8E21524A8700579F6B /* Label.swift */; };
@@ -66,38 +45,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6AD240FD22015DA90004ABDC /* CurrencyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		A5B529C1215249C900579F6B /* AlertAndPickerUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertAndPickerUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B529C4215249C900579F6B /* AlertAndPickerUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertAndPickerUtils.h; sourceTree = "<group>"; };
 		A5B529C5215249C900579F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5B529CC21524A2D00579F6B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A5B52A5821524A8600579F6B /* Countries.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Countries.bundle; sourceTree = "<group>"; };
-		A5B52A5A21524A8600579F6B /* LocaleStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleStore.swift; sourceTree = "<group>"; };
-		A5B52A5C21524A8600579F6B /* LocaleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleInfo.swift; sourceTree = "<group>"; };
-		A5B52A5D21524A8600579F6B /* LocalePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalePickerViewController.swift; sourceTree = "<group>"; };
-		A5B52A5F21524A8600579F6B /* PhoneCodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneCodeCell.swift; sourceTree = "<group>"; };
-		A5B52A6021524A8600579F6B /* CurrencyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
-		A5B52A6121524A8600579F6B /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		A5B52A6321524A8600579F6B /* TwoTextFieldsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoTextFieldsViewController.swift; sourceTree = "<group>"; };
 		A5B52A6421524A8600579F6B /* OneTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTextFieldViewController.swift; sourceTree = "<group>"; };
 		A5B52A6721524A8600579F6B /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		A5B52A6821524A8600579F6B /* PhotoLibraryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPickerViewController.swift; sourceTree = "<group>"; };
-		A5B52A6A21524A8600579F6B /* LocationSearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchResultsViewController.swift; sourceTree = "<group>"; };
-		A5B52A6B21524A8600579F6B /* LocationPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
-		A5B52A6D21524A8600579F6B /* SearchHistoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHistoryManager.swift; sourceTree = "<group>"; };
-		A5B52A6F21524A8600579F6B /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		A5B52A7021524A8600579F6B /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		A5B52A7221524A8600579F6B /* PickerViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewViewController.swift; sourceTree = "<group>"; };
-		A5B52A7421524A8600579F6B /* ContactsPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsPickerViewController.swift; sourceTree = "<group>"; };
-		A5B52A7621524A8600579F6B /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
-		A5B52A7821524A8600579F6B /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		A5B52A7A21524A8600579F6B /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
-		A5B52A7D21524A8600579F6B /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		A5B52A7F21524A8600579F6B /* ImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		A5B52A8121524A8600579F6B /* ItemWithImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemWithImage.swift; sourceTree = "<group>"; };
-		A5B52A8421524A8700579F6B /* PhotoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLayout.swift; sourceTree = "<group>"; };
-		A5B52A8521524A8700579F6B /* TelegramPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelegramPickerViewController.swift; sourceTree = "<group>"; };
-		A5B52A8721524A8700579F6B /* ItemWithPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemWithPhoto.swift; sourceTree = "<group>"; };
-		A5B52A8821524A8700579F6B /* LikeButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeButtonCell.swift; sourceTree = "<group>"; };
 		A5B52A8B21524A8700579F6B /* AttributedTextBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedTextBlock.swift; sourceTree = "<group>"; };
 		A5B52A8C21524A8700579F6B /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		A5B52A8E21524A8700579F6B /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
@@ -170,56 +128,12 @@
 		A5B52A5621524A8600579F6B /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
-				A5B52A5721524A8600579F6B /* Locale */,
+				6AD240FD22015DA90004ABDC /* CurrencyCell.swift */,
 				A5B52A6221524A8600579F6B /* TextFields */,
 				A5B52A6521524A8600579F6B /* PhotoLibrary */,
-				A5B52A6921524A8600579F6B /* Location */,
-				A5B52A7121524A8600579F6B /* PickerView */,
-				A5B52A7321524A8600579F6B /* Contacts */,
-				A5B52A7B21524A8600579F6B /* Color */,
-				A5B52A7C21524A8600579F6B /* Date */,
 				A5B52A7E21524A8600579F6B /* Image */,
-				A5B52A8221524A8700579F6B /* Telegram */,
 			);
 			path = Pickers;
-			sourceTree = "<group>";
-		};
-		A5B52A5721524A8600579F6B /* Locale */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A5821524A8600579F6B /* Countries.bundle */,
-				A5B52A5921524A8600579F6B /* Managers */,
-				A5B52A5B21524A8600579F6B /* Models */,
-				A5B52A5D21524A8600579F6B /* LocalePickerViewController.swift */,
-				A5B52A5E21524A8600579F6B /* Views */,
-			);
-			path = Locale;
-			sourceTree = "<group>";
-		};
-		A5B52A5921524A8600579F6B /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A5A21524A8600579F6B /* LocaleStore.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		A5B52A5B21524A8600579F6B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A5C21524A8600579F6B /* LocaleInfo.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A5B52A5E21524A8600579F6B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A5F21524A8600579F6B /* PhoneCodeCell.swift */,
-				A5B52A6021524A8600579F6B /* CurrencyCell.swift */,
-				A5B52A6121524A8600579F6B /* CountryCell.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		A5B52A6221524A8600579F6B /* TextFields */ = {
@@ -248,92 +162,6 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		A5B52A6921524A8600579F6B /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A6A21524A8600579F6B /* LocationSearchResultsViewController.swift */,
-				A5B52A6B21524A8600579F6B /* LocationPickerViewController.swift */,
-				A5B52A6C21524A8600579F6B /* Managers */,
-				A5B52A6E21524A8600579F6B /* Models */,
-			);
-			path = Location;
-			sourceTree = "<group>";
-		};
-		A5B52A6C21524A8600579F6B /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A6D21524A8600579F6B /* SearchHistoryManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		A5B52A6E21524A8600579F6B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A6F21524A8600579F6B /* Location.swift */,
-				A5B52A7021524A8600579F6B /* Address.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A5B52A7121524A8600579F6B /* PickerView */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A7221524A8600579F6B /* PickerViewViewController.swift */,
-			);
-			path = PickerView;
-			sourceTree = "<group>";
-		};
-		A5B52A7321524A8600579F6B /* Contacts */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A7421524A8600579F6B /* ContactsPickerViewController.swift */,
-				A5B52A7521524A8600579F6B /* Managers */,
-				A5B52A7721524A8600579F6B /* Models */,
-				A5B52A7921524A8600579F6B /* Views */,
-			);
-			path = Contacts;
-			sourceTree = "<group>";
-		};
-		A5B52A7521524A8600579F6B /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A7621524A8600579F6B /* Contacts.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		A5B52A7721524A8600579F6B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A7821524A8600579F6B /* Contact.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A5B52A7921524A8600579F6B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A7A21524A8600579F6B /* ContactCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		A5B52A7B21524A8600579F6B /* Color */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Color;
-			sourceTree = "<group>";
-		};
-		A5B52A7C21524A8600579F6B /* Date */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A7D21524A8600579F6B /* DatePickerViewController.swift */,
-			);
-			path = Date;
-			sourceTree = "<group>";
-		};
 		A5B52A7E21524A8600579F6B /* Image */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,33 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				A5B52A8121524A8600579F6B /* ItemWithImage.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		A5B52A8221524A8700579F6B /* Telegram */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A8321524A8700579F6B /* Layouts */,
-				A5B52A8521524A8700579F6B /* TelegramPickerViewController.swift */,
-				A5B52A8621524A8700579F6B /* Views */,
-			);
-			path = Telegram;
-			sourceTree = "<group>";
-		};
-		A5B52A8321524A8700579F6B /* Layouts */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A8421524A8700579F6B /* PhotoLayout.swift */,
-			);
-			path = Layouts;
-			sourceTree = "<group>";
-		};
-		A5B52A8621524A8700579F6B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A5B52A8721524A8700579F6B /* ItemWithPhoto.swift */,
-				A5B52A8821524A8700579F6B /* LikeButtonCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -502,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5B52AC721524A8700579F6B /* Main.storyboard in Resources */,
-				A5B52AA721524A8700579F6B /* Countries.bundle in Resources */,
 				A5B529CD21524A2D00579F6B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,48 +317,28 @@
 				A5B52AC821524A8700579F6B /* GradientSlider.swift in Sources */,
 				A5B52AD921524A8700579F6B /* Bundle.swift in Sources */,
 				A5B52AD221524A8700579F6B /* UITextView+Extensions.swift in Sources */,
-				A5B52ABB21524A8700579F6B /* ContactCell.swift in Sources */,
-				A5B52AAC21524A8700579F6B /* CurrencyCell.swift in Sources */,
-				A5B52AC221524A8700579F6B /* LikeButtonCell.swift in Sources */,
-				A5B52ABC21524A8700579F6B /* DatePickerViewController.swift in Sources */,
 				A5B52AD021524A8700579F6B /* Date+Extension.swift in Sources */,
-				A5B52ABA21524A8700579F6B /* Contact.swift in Sources */,
 				A5B52ACE21524A8700579F6B /* UIViewController+Extensions.swift in Sources */,
 				A5B52AD521524A8700579F6B /* UISearchBar+Extensions.swift in Sources */,
-				A5B52AC021524A8700579F6B /* TelegramPickerViewController.swift in Sources */,
-				A5B52AB721524A8700579F6B /* PickerViewViewController.swift in Sources */,
 				A5B52ADC21524A8700579F6B /* UITextField+Extensions.swift in Sources */,
-				A5B52AB921524A8700579F6B /* Contacts.swift in Sources */,
 				A5B52AC521524A8700579F6B /* Label.swift in Sources */,
-				A5B52AA821524A8700579F6B /* LocaleStore.swift in Sources */,
 				A5B52AAF21524A8700579F6B /* OneTextFieldViewController.swift in Sources */,
 				A5B52AD421524A8700579F6B /* UIImage+Extensions.swift in Sources */,
 				A5B52AD121524A8700579F6B /* String+Extensions.swift in Sources */,
 				A5B52AC921524A8700579F6B /* TextField.swift in Sources */,
 				A5B52AAE21524A8700579F6B /* TwoTextFieldsViewController.swift in Sources */,
-				A5B52AB821524A8700579F6B /* ContactsPickerViewController.swift in Sources */,
 				A5B52ACD21524A8700579F6B /* UIImageView+Extensions.swift in Sources */,
-				A5B52AB421524A8700579F6B /* SearchHistoryManager.swift in Sources */,
 				A5B52ACF21524A8700579F6B /* UIView+Extensions.swift in Sources */,
-				A5B52AAD21524A8700579F6B /* CountryCell.swift in Sources */,
 				A5B52ADB21524A8700579F6B /* Locale+Extensions.swift in Sources */,
 				A5B52AD721524A8700579F6B /* UIAlertController+Extensions.swift in Sources */,
-				A5B52AC121524A8700579F6B /* ItemWithPhoto.swift in Sources */,
-				A5B52ABF21524A8700579F6B /* PhotoLayout.swift in Sources */,
 				A5B52AC321524A8700579F6B /* AttributedTextBlock.swift in Sources */,
-				A5B52AB521524A8700579F6B /* Location.swift in Sources */,
 				A5B52AC421524A8700579F6B /* TextViewController.swift in Sources */,
-				A5B52AA921524A8700579F6B /* LocaleInfo.swift in Sources */,
-				A5B52AAA21524A8700579F6B /* LocalePickerViewController.swift in Sources */,
-				A5B52AB621524A8700579F6B /* Address.swift in Sources */,
 				A5B52ABD21524A8700579F6B /* ImagePickerViewController.swift in Sources */,
-				A5B52AB321524A8700579F6B /* LocationPickerViewController.swift in Sources */,
-				A5B52AB221524A8700579F6B /* LocationSearchResultsViewController.swift in Sources */,
 				A5B52AD821524A8700579F6B /* Optional+Extensions.swift in Sources */,
 				A5B52AD321524A8700579F6B /* UIColor+Extensions.swift in Sources */,
 				A5B52ABE21524A8700579F6B /* ItemWithImage.swift in Sources */,
 				A5B52AB121524A8700579F6B /* PhotoLibraryPickerViewController.swift in Sources */,
-				A5B52AAB21524A8700579F6B /* PhoneCodeCell.swift in Sources */,
+				6AD240FE22015DA90004ABDC /* CurrencyCell.swift in Sources */,
 				A5B52AD621524A8700579F6B /* UIApplication+Extensions.swift in Sources */,
 				A5B52ACB21524A8700579F6B /* Array+Extensions.swift in Sources */,
 				A5B52ACC21524A8700579F6B /* UISegmentedControl+Extensions.swift in Sources */,
